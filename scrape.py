@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 from csv import writer
 import pandas as pd
+from selenium import webdriver
 url = f"https://openpayrolls.com/university-college/texas-am-university-system/page-1"
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/2010010 Firefox / 50.0'}
 page = requests.get(url, headers=headers)
